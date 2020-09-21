@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 
 #load dataset
-df = pd.read_csv('data/cosmetics.csv')
+df = pd.read_csv('cosmetics.csv')
 
 
 # In[17]:
@@ -89,7 +89,7 @@ df['Y'] = tsne_features[:,1]
 
 
 #Part 2: Visualization
-df_visualize = pd.read_csv('data/cosmetic_TSNE.csv')
+df_visualize = pd.read_csv('cosmetic_TSNE.csv')
 
 
 # In[23]:
@@ -105,7 +105,7 @@ skin_type = ['Combination', 'Dry', 'Normal', 'Oily', 'Sensitive']
 
 from bokeh.io import show, curdoc, output_notebook, push_notebook
 from bokeh.plotting import figure
-from bokeh.models import ColumnDataSource, HoverTool, Select, Paragraph, TextInput
+from bokeh.models import ColumnSource, HoverTool, Select, Paragraph, TextInput
 from bokeh.layouts import widgetbox, column, row
 from ipywidgets import interact
 
@@ -329,7 +329,7 @@ btn_2.on_click(if_ipf)
 # In[ ]:
 
 
-reviews = pd.read_csv('data/reviews.csv')
+reviews = pd.read_csv('reviews.csv')
 
 
 # In[ ]:
